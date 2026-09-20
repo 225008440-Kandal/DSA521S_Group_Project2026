@@ -26,4 +26,17 @@ public class SortingAlgorithms {
             a[i] = temp;
         }
     }
+    // ===== 2. INSERTION SORT =====
+    public static void insertionSort(int[] a) {
+        for (int i = 1; i < a.length; i++) {
+            int key = a[i];              // the element to insert
+            int j = i - 1;
+            // shift larger elements to the right
+            while (j >= 0 && a[j] > key) {
+                a[j + 1] = a[j];
+                j--;
+            }
+            a[j + 1] = key;             // place key in its correct spot
+        }
+    }
 }
