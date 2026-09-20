@@ -75,4 +75,34 @@ public class SortingAlgorithms {
         while (i < n1) { a[k] = leftArr[i]; i++; k++; }
         while (j < n2) { a[k] = rightArr[j]; j++; k++; }
     }
+        // ===== 4. QUICK SORT =====
+    public static void quickSort(int[] a, int low, int high) {
+        if (low < high) {
+            int pivotIndex = partition(a, low, high);   // place pivot correctly
+            quickSort(a, low, pivotIndex - 1);          // sort left of pivot
+            quickSort(a, pivotIndex + 1, high);         // sort right of pivot
+        }
+    }
+
+    // helper: partition around the last element as pivot
+    public static int partition(int[] a, int low, int high) {
+        int pivot = a[high];      // choose the last element as pivot
+        int i = low - 1;          // index of smaller element
+
+        for (int j = low; j < high; j++) {
+            if (a[j] < pivot) {
+                i++;
+                // swap a[i] and a[j]
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+        // put the pivot in its correct place
+        int temp = a[i + 1];
+        a[i + 1] = a[high];
+        a[high] = temp;
+
+        return i + 1;             // return the pivot's final position
+    }
 }
