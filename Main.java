@@ -25,5 +25,17 @@ public class Main {
 
         System.out.print("After:  ");
         SortingAlgorithms.printArray(arr2);
+        
+        System.out.println();
+        System.out.println("===== MERGE SORT =====");
+        int[] arr3 = {17, 14, 11, 15, 18, 12, 10, 13, 9, 16};
+
+        System.out.print("Before: ");
+        SortingAlgorithms.printArray(arr3);
+
+        SortingAlgorithms.mergeSort(arr3, 0, arr3.length - 1);
+
+        System.out.print("After:  ");
+        SortingAlgorithms.printArray(arr3);
     }
 }
