@@ -1,5 +1,24 @@
 // SortingAlgorithms.java
 // Part B - Sorting Algorithms (Selection, Insertion, Merge, Quick)
+/*
+ * ============================================================
+ *  COMPARISON OF SORTING ALGORITHMS (Part B)
+ * ============================================================
+ *
+ *  Algorithm       | Best case  | Average    | Worst case | Method              | Stable?
+ *  --------------- | ---------- | ---------- | ---------- | ------------------- | -------
+ *  Selection Sort  | O(n^2)     | O(n^2)     | O(n^2)     | Selection + swap    | No
+ *  Insertion Sort  | O(n)       | O(n^2)     | O(n^2)     | Insertion + shift   | Yes
+ *  Merge Sort      | O(n log n) | O(n log n) | O(n log n) | Divide and conquer  | Yes
+ *  Quick Sort      | O(n log n) | O(n log n) | O(n^2)     | Divide (pivot)      | No
+ *
+ *  Notes:
+ *  - Selection & Insertion sort are simple but slow (O(n^2)) for large data.
+ *  - Insertion sort is best when the array is nearly sorted (best case O(n)).
+ *  - Merge sort is the most reliable: O(n log n) in ALL cases, but uses extra memory.
+ *  - Quick sort is usually fast (O(n log n)) but degrades to O(n^2) with a bad pivot.
+ * ============================================================
+ */
 
 public class SortingAlgorithms {
 
