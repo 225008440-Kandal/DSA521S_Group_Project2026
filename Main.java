@@ -50,5 +50,13 @@ public class Main {
 
         System.out.print("After:  ");
         SortingAlgorithms.printArray(arr4); 
+         System.out.println();
+        System.out.println("===== DAILY STATISTICS =====");
+        DailyStatistics stats = new DailyStatistics();
+        stats.addRecord(12);
+        stats.addRecord(5);
+        stats.addRecord(8);
+        stats.addRecord(15);
+        stats.displayReport();
 }
 }
