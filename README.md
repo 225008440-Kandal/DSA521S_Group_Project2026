@@ -11,6 +11,7 @@
 | DEON HANGE | 224087029 | A1 – Queue |
 | ILUNGA BOTA | 226141772 |  | C – Algorithm Experiment
 | ABEL THOMAS MUTJI | 226095479 |A3 - Stack (Postfix) |
+| Kalwenya Penda | 225126575 |  |
 
 ### GitHub Repository
 https://github.com/225008440-Kandal/DSA521S_Group_Project2026
